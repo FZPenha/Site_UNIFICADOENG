@@ -4,91 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="">
-    <title>UNIFICADO ENGENHARIA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="./images/Unificado0.jpg">
+    <title>Unificado Engenharia</title>
 </head>
 <body>
-    <div style="display: flex; justify-content: space-between;" id="cabecalho">
+    <div id="cabecalho">
         <div style="display: flex; justify-content: flex-start;">
-            <img src="" alt="">
-            <h3>UNIFICADO ENGENHARIA</h3>
+            <img style="height: 75px; width: 75px;" src="./images/Unificado0.jpg" alt="">
         </div>
 
         <div style="display: flex; justify-content: flex-end;">
-            <p>SOBRE NÓS</p>
-            <p>PORTFÓLIO</p>
-            <p>CONTATO</p>
+            <button onclick="goTo('about')">SOBRE NÓS</button>
+            <button onclick="goTo('portfolio')">PORTFÓLIO</button>
+            <button onclick="goTo('contact')">CONTATO</button>
         </div>
     </div>
 
-    <div style="display: flex;">
-        <div>
+    <div style="display: grid; grid-template-columns: 50vw 50vw;">
+        <div class="middle">
+            <h1>UNIFICADO ENGENHARIA</h1>
             <div>
                 <h2>ENGENHARIA ELÉTRICA</h2>
                 <h2>AO SEU ALCANCE</h2>
             </div>
-            <div>
-                <h3>Contratar engenheiro nunca foi tão simples!</h3>
-            </div>
-            <button>
-                SAIBA MAIS!
+            <button id='saiba-mais' onclick="goTo('about')">
+                SAIBA MAIS
             </button>
         </div>
+        <img src="./images/Unificado0.jpg" alt="">
     </div>
 
-    <div>
-        <h2>Sobre Nós</h2>
-        <hr />
-        <div style="display: flex;">
+    <div id="about">
+        <div class="middle">
             <div>
-                
-                <h3>Bem vindo à nossa plataforma online</h3>
-                <p>A Unificado Engenharia é voltada para a elaboração de projetos e prestação de serviços personalizados com excelência e comprometimento, empregando a mais nova tecnologia aliada às modernas tendências de mercado, visando o melhor custo benefício para o cliente. Tornando seu sonho e projeto realidade.</p>
+                <h2>Sobre Nós</h2>
+                <hr color="black" style="width: 25vw;"/>
             </div>
-            <div>
-                <img src="" alt="">
-            </div>
+            <h3 style="width: 25vw;">Bem vindo à nossa plataforma de consultoria online</h3>
+            <p style="width: 25vw;">A Unificado Engenharia é voltada para a elaboração de projetos e prestação de serviços personalizados com excelência e comprometimento, empregando a mais nova tecnologia aliada às modernas tendências de mercado, visando o melhor custo benefício para o cliente. Tornando seu sonho e projeto realidade.</p>
+            <p></p>
         </div>
+        <img src="./images/Unificado0.jpg" alt="">
     </div>
 
-    <div>
-        <h2>Portfólio</h2>
-        <hr />
-        <div style="display: flex;">
-            <div style="width: 20vw;">
-                <i></i>
-                <h3>Projetos Executivos</h3>
-                <p>Projetos executivos para instalações elétricas e ar condicionado</p>
-            </div>
-            <div style="width: 20vw;">
-                <i></i>
-                <h3>Automação Residencial</h3>
-                <p>Automação completa residencial, industrial e comercial</p>
-            </div>
-            <div style="width: 20vw;">
-                <i></i>
-                <h3>Projetos Ecológicos & Sustentáveis</h3>
-                <p>Geração de energia fotovoltaica, aquecimento da água e reutilização de água da chuva</p>
-            </div>
-            <div style="width: 20vw;">
-                <i></i>
-                <h3>Laudo e Perícia Técnica</h3>
-                <p>Laudos seguindo as normas NR-10 (laudo elétrico) e NBR5416 (SPDA)</p>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <h2>Contato</h2>
-        <hr />
-        <div style="display: flex;">
+    <div id="portfolio">
+        <div class="middle">
             <div>
-                <img src="" alt="">
-                <h3>André Luis Cobello</h3>
-                <div style="display: flex;">
-                    <i></i> (15) 98114-0425
-                    <i></i> unificadoengeco@gmail.com
+                <h2>Portfólio</h2>
+                <hr color="white" style="width: 25vw;" />
+            </div>
+            <div style="display: flex;">
+                <div style="width: 22vw;">
+                    <i></i>
+                    <h3>Projetos Executivos</h3>
+                    <p>Projetos executivos para instalações elétricas e ar condicionado</p>
                 </div>
+                <div style="width: 22vw;">
+                    <i></i>
+                    <h3>Automação Residencial</h3>
+                    <p>Automação completa residencial, industrial e comercial</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <h2></h2>
+            <hr />
+            <div style="display: flex;">
+                <div style="width: 22vw;">
+                    <i></i>
+                    <h3>Projetos Ecológicos & Sustentáveis</h3>
+                    <p>Geração de energia fotovoltaica, aquecimento da água e reutilização de água da chuva</p>
+                </div>
+                <div style="width: 22vw;">
+                    <i></i>
+                    <h3>Laudo e Perícia Técnica</h3>
+                    <p>Laudos seguindo as normas NR-10 (laudo elétrico) e NBR5416 (SPDA)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="middle">
+            <div>
+                <h2>Contato</h2>
+                <hr color="black" style="width: 25vw;"/>
+            </div>
+
+            <img src="./images/Unificado0.jpg" alt="">
+            <h3>André Luis Cobello</h3>
+            <div style="display: flex;">
+                <i class="material-icons" style="margin-right: 5px;">phone</i> (15) 98114-0425
+            </div>
+        </div>
+        <div class="middle">
+            <div></div>
+            <img src="./images/Unificado0.jpg" alt="">
+            <h3></h3>
+            <div style="display: flex;">
+                <i class="material-icons" style="margin-right: 5px;">mail</i> unificadoengeco@gmail.com
             </div>
         </div>
     </div>
