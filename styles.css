@@ -48,9 +48,22 @@ body>div>div>img {
     text-align: center;
 }
 
+.middle h1{
+    font-size: 35px;
+    line-height: 60px;
+    margin: 25px 0;
+    
+}
+
 #saiba-mais {
     background-color: #fff;
     font-weight: bold;
     padding: 8px;
     border-radius: 8px;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
 }
