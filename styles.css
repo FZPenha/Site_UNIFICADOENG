@@ -7,10 +7,10 @@ body{
 }
 
 body>div+div {
-    padding: 24px;
-    height: 75vh;
+    padding: 12px;
+    min-height: 75vh;
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 48vw 48vw;
 }
 
 body>div+div:nth-of-type(even) {
@@ -42,6 +42,19 @@ body>div>div>img {
     padding: 0;
 }
 
+#cabecalho>div > p {
+    padding: 8px;
+}
+
+#cabecalho>div>p:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+div> p+p{
+    border-left: 1px white solid;
+}
+
 .middle {
     display: grid;
     place-items: center;
@@ -58,8 +71,14 @@ body>div>div>img {
 #saiba-mais {
     background-color: #fff;
     font-weight: bold;
-    padding: 8px;
+    font-size: 16px;
+    padding: 1vw;
     border-radius: 8px;
+}
+
+#saiba-mais:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 li{

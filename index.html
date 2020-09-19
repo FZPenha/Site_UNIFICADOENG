@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="./images/Unificado0.jpg">
+    <link rel="icon" href="./images/Unificado1.png">
     <title>Unificado Engenharia</title>
 </head>
 <body>
     <div id="cabecalho">
-        <div style="display: flex; justify-content: flex-start;padding-left: 100px;">
-            <img style="height: 60px; width: 65px;" src="./images/Unificado0.jpg" alt="">
+        <div style="display: flex; justify-content: flex-start;padding-left: 10vw;">
+            <img draggable="false" style="height: 60px; width: 65px;" src="./images/Unificado0.jpg" alt="">
         </div>
 
-        <div style="display: flex; justify-content: flex-end; align-items: center; padding-right: 100px;">
-            <li><button onclick="goTo('about')">SOBRE NÓS</button></li>
-            <li><button onclick="goTo('portfolio')">PORTFÓLIO</button></li>
-            <li><button onclick="goTo('contact')">CONTATO</button></li>
+        <div style="display: flex; justify-content: flex-end; align-items: center; padding-right: 10vw;">
+            <p onclick="goTo('about')">SOBRE NÓS</p>
+            <p onclick="goTo('portfolio')">PORTFÓLIO</p>
+            <p onclick="goTo('contact')">CONTATO</p>
         </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: 50vw 50vw;">
+    <div style="display: grid; grid-template-columns: 50vw 50vw; background-image: linear-gradient(318.12deg, rgba(26, 87, 144, 0.5) 0%, #1A5790 53.82%), url('./images/Carica.png');">
         <div class="middle">
             <h1>UNIFICADO ENGENHARIA</h1>
-            <h2>ENGENHARIA ELÉTRICA</h2>
-            <h2>AO SEU ALCANCE</h2>
+            
+            <div>
+                <h2>ENGENHARIA ELÉTRICA</h2>
+                <h2>AO SEU ALCANCE</h2>
+            </div>
             
             <button id='saiba-mais' onclick="goTo('about')">
                 SAIBA MAIS
             </button>
         </div>
-        <img src="./images/Unificado0.jpg" alt="">
     </div>
 
     <div id="about">
         <div class="middle">
             <div>
-                <h2>Sobre Nós</h2>
+                <h2 style="font-size: 2.2vw;">Sobre Nós</h2>
                 <hr color="black" style="width: 25vw;"/>
             </div>
-            <h3 style="width: 25vw;">Bem vindo à nossa plataforma de consultoria online</h3>
-            <p style="width: 25vw;">A Unificado Engenharia é voltada para a elaboração de projetos e prestação de serviços personalizados com excelência e comprometimento, empregando a mais nova tecnologia aliada às modernas tendências de mercado, visando o melhor custo benefício para o cliente. Tornando seu sonho e projeto realidade.</p>
+            <h3 style="width: 25vw; font-size: 1.8vw;">Bem vindo à nossa plataforma de consultoria online</h3>
+            <p style="width: 25vw; font-size: 1.5vw;">A Unificado Engenharia é voltada para a elaboração de projetos e prestação de serviços personalizados com excelência e comprometimento. <br/> 
+                Empregando a mais nova tecnologia aliada às modernas tendências de mercado, visando o melhor custo benefício para o cliente. <br/>
+                <br/>Tornando seu sonho e projeto realidade.</p>
             <p></p>
         </div>
         <img src="./images/Unificado0.jpg" alt="">
@@ -50,35 +54,37 @@
     <div id="portfolio">
         <div class="middle">
             <div>
-                <h2>Portfólio</h2>
+                <h2 style="font-size: 2.2vw;">Portfólio</h2>
                 <hr color="white" style="width: 25vw;" />
             </div>
             <div style="display: flex;">
-                <div style="width: 22vw;">
-                    <i></i>
-                    <h3>Projetos Executivos</h3>
-                    <p>Projetos executivos para instalações elétricas e ar condicionado</p>
+                <div style="width: 20vw; padding: 1vw">
+                    <i class="material-icons" style="font-size: 10vw;">build</i>
+                    <h3 style="font-size: 1.8vw;">Projetos Executivos</h3>
+                    <p style="font-size: 1.5vw;">Projetos executivos para instalações elétricas e ar condicionado</p>
                 </div>
-                <div style="width: 22vw;">
-                    <i></i>
-                    <h3>Automação Residencial</h3>
-                    <p>Automação completa residencial, industrial e comercial</p>
+                <div style="width: 20vw; padding: 1vw">
+                    <i class="material-icons" style="font-size: 10vw;">house</i>
+                    <h3 style="font-size: 1.8vw;">Automação Residencial</h3>
+                    <p style="font-size: 1.5vw;">Automação completa residencial, industrial e comercial</p>
                 </div>
             </div>
         </div>
         <div class="middle">
-            <h2></h2>
-            <hr />
+            <div style="margin-top: 18vh;">
+                <h2></h2>
+                <hr />
+            </div>
             <div style="display: flex;">
-                <div style="width: 22vw;">
-                    <i></i>
-                    <h3>Projetos Ecológicos & Sustentáveis</h3>
-                    <p>Geração de energia fotovoltaica, aquecimento da água e reutilização de água da chuva</p>
+                <div style="width: 20vw; padding: 1vw">
+                    <i class="material-icons" style="font-size: 10vw;">eco</i>
+                    <h3 style="font-size: 1.8vw;">Projetos Ecológicos & Sustentáveis</h3>
+                    <p style="font-size: 1.5vw;">Geração de energia fotovoltaica, aquecimento da água e reutilização de água da chuva</p>
                 </div>
-                <div style="width: 22vw;">
-                    <i></i>
-                    <h3>Laudo e Perícia Técnica</h3>
-                    <p>Laudos seguindo as normas NR-10 (laudo elétrico) e NBR5416 (SPDA)</p>
+                <div style="width: 20vw; padding: 1vw">
+                    <i class="material-icons" style="font-size: 10vw;">history_edu</i>
+                    <h3 style="font-size: 1.8vw;">Laudo e Perícia Técnica</h3>
+                    <p style="font-size: 1.5vw;">Laudos seguindo as normas NR-10 (laudo elétrico) e NBR5416 (SPDA)</p>
                 </div>
             </div>
         </div>
@@ -91,7 +97,7 @@
                 <hr color="black" style="width: 25vw;"/>
             </div>
 
-            <img src="./images/Unificado0.jpg" alt="">
+            <img src="./images/Carica.png" alt="">
             <h3>André Luis Cobello</h3>
             <div style="display: flex;">
                 <i class="material-icons" style="margin-right: 5px;">phone</i> (15) 98114-0425
@@ -99,7 +105,7 @@
         </div>
         <div class="middle">
             <div></div>
-            <img src="./images/Unificado0.jpg" alt="">
+            <img src="./images/MK.png" alt="">
             <h3></h3>
             <div style="display: flex;">
                 <i class="material-icons" style="margin-right: 5px;">mail</i> unificadoengeco@gmail.com
