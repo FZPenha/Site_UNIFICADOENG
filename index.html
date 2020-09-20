@@ -10,8 +10,11 @@
 </head>
 <body>
     <div id="cabecalho">
-        <div style="display: flex; justify-content: flex-start;padding-left: 10vw;">
-            <img draggable="false" style="height: 60px; width: 65px;" src="./images/Unificado0.jpg" alt="">
+        <div style="display: flex; justify-content: flex-start;padding-left: 10vw; cursor: pointer;">
+            <img draggable="false" 
+            style="height: 60px; width: 65px;" 
+            src="./images/Unificado0.jpg" 
+            onclick="goTo('home')">
         </div>
 
         <div style="display: flex; justify-content: flex-end; align-items: center; padding-right: 10vw;">
@@ -21,7 +24,9 @@
         </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: 50vw 50vw; background-image: linear-gradient(318.12deg, rgba(26, 87, 144, 0.5) 0%, #1A5790 53.82%), url('./images/Carica.png');">
+    <div style="display: grid; grid-template-columns: 50vw 50vw; 
+    background-image: linear-gradient(318.12deg, rgba(26, 87, 144, 0.5) 0%, #1A5790 53.82%), url('./images/Carica.png');"
+    id="home">
         <div class="middle">
             <h1>UNIFICADO ENGENHARIA</h1>
             

@@ -34,12 +34,14 @@ body>div>div>img {
 }
 
 #cabecalho {
+    position: fixed;
     display: flex; 
     justify-content: space-between;
     background-color: #1A5790;
     color: #fff;
     height: auto;
     padding: 0;
+    width: 100vw;
 }
 
 #cabecalho>div > p {
