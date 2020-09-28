@@ -24,9 +24,9 @@
         </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: 50vw 50vw; 
-    background-image: linear-gradient(318.12deg, rgba(26, 87, 144, 0.5) 0%, #1A5790 53.82%), url('./images/Carica.png');"
-    id="home">
+    <div id="home"
+    style="display: grid; grid-template-columns: 50vw 50vw; 
+    background-image: linear-gradient(318.12deg, rgba(26, 87, 144, 0.5) 0%, #1A5790 53.82%);">
         <div class="middle">
             <h1>UNIFICADO ENGENHARIA</h1>
             
@@ -38,6 +38,9 @@
             <button id='saiba-mais' onclick="goTo('about')">
                 SAIBA MAIS
             </button>
+        </div>
+        <div class="middle">
+            <img src="./images/Carica.png" style="opacity: 0.65; width: 25vw; height: 50vh;">
         </div>
     </div>
 
@@ -53,44 +56,40 @@
                 <br/>Tornando seu sonho e projeto realidade.</p>
             <p></p>
         </div>
-        <img src="./images/Unificado0.jpg" alt="">
+
+        <div class="middle">
+            <img src="./images/Unificado0.jpg" alt="">
+        </div>
     </div>
 
     <div id="portfolio">
-        <div class="middle">
-            <div>
+        <div class="middle" style="width: 100vw;">
+            <div class="portfolio-item" id="portfolio-title">
                 <h2 style="font-size: 2.2vw;">Portfólio</h2>
-                <hr color="white" style="width: 25vw;" />
             </div>
-            <div style="display: flex;">
-                <div style="width: 20vw; padding: 1vw">
-                    <i class="material-icons" style="font-size: 10vw;">build</i>
-                    <h3 style="font-size: 1.8vw;">Projetos Executivos</h3>
-                    <p style="font-size: 1.5vw;">Projetos executivos para instalações elétricas e ar condicionado</p>
-                </div>
-                <div style="width: 20vw; padding: 1vw">
-                    <i class="material-icons" style="font-size: 10vw;">house</i>
-                    <h3 style="font-size: 1.8vw;">Automação Residencial</h3>
-                    <p style="font-size: 1.5vw;">Automação completa residencial, industrial e comercial</p>
-                </div>
+
+            <div class="middle portfolio-item">
+                <i class="material-icons" style="font-size: 10vw;">build</i>
+                <h3 style="font-size: 1.8vw;">Projetos Executivos</h3>
+                <p style="font-size: 1.5vw;">Projetos executivos para instalações elétricas e ar condicionado</p>
             </div>
-        </div>
-        <div class="middle">
-            <div style="margin-top: 18vh;">
-                <h2></h2>
-                <hr />
+
+            <div class="middle portfolio-item">
+                <i class="material-icons" style="font-size: 10vw;">house</i>
+                <h3 style="font-size: 1.8vw;">Automação Residencial</h3>
+                <p style="font-size: 1.5vw;">Automação completa residencial, industrial e comercial</p>
             </div>
-            <div style="display: flex;">
-                <div style="width: 20vw; padding: 1vw">
-                    <i class="material-icons" style="font-size: 10vw;">eco</i>
-                    <h3 style="font-size: 1.8vw;">Projetos Ecológicos & Sustentáveis</h3>
-                    <p style="font-size: 1.5vw;">Geração de energia fotovoltaica, aquecimento da água e reutilização de água da chuva</p>
-                </div>
-                <div style="width: 20vw; padding: 1vw">
-                    <i class="material-icons" style="font-size: 10vw;">history_edu</i>
-                    <h3 style="font-size: 1.8vw;">Laudo e Perícia Técnica</h3>
-                    <p style="font-size: 1.5vw;">Laudos seguindo as normas NR-10 (laudo elétrico) e NBR5416 (SPDA)</p>
-                </div>
+
+            <div class="middle portfolio-item">
+                <i class="material-icons" style="font-size: 10vw;">eco</i>
+                <h3 style="font-size: 1.8vw;">Projetos Ecológicos & Sustentáveis</h3>
+                <p style="font-size: 1.5vw;">Geração de energia fotovoltaica, aquecimento da água e reutilização de água da chuva</p>
+            </div>
+
+            <div class="middle portfolio-item" style="margin-bottom: 0; padding-bottom: 0; border-bottom: 0;">
+                <i class="material-icons" style="font-size: 10vw;">history_edu</i>
+                <h3 style="font-size: 1.8vw;">Laudo e Perícia Técnica</h3>
+                <p style="font-size: 1.5vw;">Laudos seguindo as normas NR-10 (laudo elétrico) e NBR5416 (SPDA)</p>
             </div>
         </div>
     </div>
